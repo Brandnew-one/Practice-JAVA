@@ -6,7 +6,11 @@ public class Conditional {
         String s1 = args[0];
         String s2 = args[1];
 
-        if(s1 == "hello") {
+        /*
+        * String 타입을 자세하게 보진 않았지만 char type의 array로 구성되어 있는 형태이고
+        * array 타입은 기본적으로 주소값을 들고 있는 ref 타입 형태이기 때문에 주소값 == 주소값 형태로는 원하는 결과를 얻을 수 없다.
+        */
+        if(s1.equals("hello")) {
             System.out.println(s1);
             System.out.println(s1.length());
             System.out.println(s2);
